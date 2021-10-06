@@ -1,55 +1,61 @@
 # Gesture Navigation System
 
-
+## Steps to Add your Code
+- [x] Clone the repository
+- [x] Add in your Code to the cloned repository
+- [x] Switch to your branch by "git checkout your_firstname", if branch doesn't exist create a new branch by "git checkout -b your_firstname"
+- [x] Stage the changes for commiting them by "git add ."
+- [x] Commit your changes via "git commit -m "Over here give a basic reason behind the commit" "
+- [x] Now finally push the changes into the particular branch "git push --set-upstream origin your_firstname"  
 
 ## Contributors
 
 ##### NAME :
 ---------------
-##### Number of PR's Submitted :
+##### Number of commit's Submitted :
 ---------------
 
 ##### NAME :
 ---------------
-##### Number of PR's Submitted :
+##### Number of commit's Submitted :
 ---------------
 
 ##### NAME :
 ---------------
-##### Number of PR's Submitted :
+##### Number of commit's Submitted :
 ---------------
 
 ##### NAME :
 ---------------
-##### Number of PR's Submitted :
+##### Number of commit's Submitted :
 ---------------
 
 ##### NAME :
 ---------------
-##### Number of PR's Submitted :
+##### Number of commit's Submitted :
 ---------------
 
 ##### NAME :
 ---------------
-##### Number of PR's Submitted :
+##### Number of commit's Submitted :
 ---------------
 
 ##### NAME :
 ---------------
-##### Number of PR's Submitted :
+##### Number of commit's Submitted :
 ---------------
 
 ##### NAME :
 ---------------
-##### Number of PR's Submitted :
+##### Number of commit's Submitted :
 ---------------
 
 ##### NAME :
 ---------------
-##### Number of PR's Submitted :
+##### Number of commit's Submitted :
 ---------------
 
-##### NAME :
+##### NAME : 
 ---------------
-##### Number of PR's Submitted :
+##### Number of commit's Submitted : 1
 ---------------
