@@ -7,15 +7,17 @@
 - [x] Stage the changes for commiting them by "git add ."
 - [x] Commit your changes via "git commit -m "Over here give a basic reason behind the commit" "
 - [x] Now finally push the changes into the particular branch "git push --set-upstream origin your_firstname"  
+- [x] On github change to the branch you made changes and generate PR.
+- [x] While generating PR remember to add description in PR, containing information and reason of PR to be submitted.  
 
 ## Contributors
 
-##### NAME :
+##### NAME : 
 ---------------
-##### Number of commit's Submitted :
+##### Number of commit's Submitted : 
 ---------------
 
-##### NAME :
+##### NAME : 
 ---------------
 ##### Number of commit's Submitted :
 ---------------
@@ -57,5 +59,5 @@
 
 ##### NAME : 
 ---------------
-##### Number of commit's Submitted : 1
+##### Number of commit's Submitted : 
 ---------------
