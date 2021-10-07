@@ -12,9 +12,9 @@
 
 ## Contributors
 
-##### NAME : 
+##### NAME : Pratyush Kumar Patnaik
 ---------------
-##### Number of commit's Submitted : 
+##### Number of commit's Submitted : 1 
 ---------------
 
 ##### NAME : 
