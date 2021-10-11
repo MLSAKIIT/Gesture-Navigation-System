@@ -19,7 +19,7 @@
 
 ##### NAME : Sneha Daripa
 ---------------
-##### Number of commit's Submitted :1
+##### Number of commit's Submitted : 1
 ---------------
 
 ##### NAME :
@@ -57,7 +57,7 @@
 ##### Number of commit's Submitted :
 ---------------
 
-##### NAME : 
+##### NAME : Sibananda Sahu
 ---------------
-##### Number of commit's Submitted : 
+##### Number of commit's Submitted : 1
 ---------------
