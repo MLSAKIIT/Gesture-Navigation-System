@@ -75,6 +75,43 @@ while True:
                 if PasteDist < 22 and HoverDist > 30:
                     frame = cv2.putText(frame, "Pasting contents",
                                         (20, 100), cv2.FONT_HERSHEY_PLAIN, 1, 2)
+                # Checking scroll up
+                ScrollDistUp = math.sqrt(((hand.landmark[8].x - hand.landmark[7].x) * w) ** 2 + (
+                        (hand.landmark[8].y - hand.landmark[7].y) * h) ** 2)
 
+                if ScrollDistUp <15:
+                    frame = cv2.putText(frame, "Scrolling up",
+                                        (20, 60), cv2.FONT_HERSHEY_PLAIN, 1, 2)    
+                    
+                # Checking scroll down
+                ScrollDistUp = math.sqrt(((hand.landmark[12].x - hand.landmark[11].x) * w) ** 2 + (
+                        (hand.landmark[12].y - hand.landmark[11].y) * h) ** 2)
+
+                if ScrollDistUp <5:
+                    frame = cv2.putText(frame, "Scrolling down",
+                                        (20, 60), cv2.FONT_HERSHEY_PLAIN, 1, 2) 
+                # Checking zoom in
+                ZoomInDist = math.sqrt(((hand.landmark[5].x - hand.landmark[4].x) * w) ** 2 + (
+                        (hand.landmark[5].y - hand.landmark[4].y) * h) ** 2)
+
+                if ZoomInDist <10:
+                    frame = cv2.putText(frame, "Zooming in",
+                                        (20, 60), cv2.FONT_HERSHEY_PLAIN, 1, 2)     
+           
+                # Checking zoom out
+                ZoomOutDist = math.sqrt(((hand.landmark[4].x - hand.landmark[17].x) * w) ** 2 + (
+                        (hand.landmark[12].y - hand.landmark[11].y) * h) ** 2)
+
+                if ZoomOutDist <30:
+                    frame = cv2.putText(frame, "Zooming out",
+                                        (20, 60), cv2.FONT_HERSHEY_PLAIN, 1, 2)   
+                # Checking cut
+                CutDist = math.sqrt(((hand.landmark[20].x - hand.landmark[15].x) * w) ** 2 + (
+                        (hand.landmark[20].y - hand.landmark[15].y) * h) ** 2)
+
+                if CutDist <25:
+                    frame = cv2.putText(frame, "Cut",
+                                        (20, 60), cv2.FONT_HERSHEY_PLAIN, 1, 2)                          
+                    
         cv2.imshow("Mediapipe", frame)
 cv2.destroyAllWindows()
