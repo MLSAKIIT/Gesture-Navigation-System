@@ -19,20 +19,20 @@
 
 ##### NAME : Sneha Daripa
 ---------------
+##### Number of commit's Submitted : 2
+---------------
+
+##### NAME : Ayush Sinha
+---------------
 ##### Number of commit's Submitted : 1
 ---------------
 
-##### NAME :
+##### NAME : Aniket Thakur
 ---------------
-##### Number of commit's Submitted :
----------------
-
-##### NAME :
----------------
-##### Number of commit's Submitted :
+##### Number of commit's Submitted : 1
 ---------------
 
-##### NAME :
+##### NAME : 
 ---------------
 ##### Number of commit's Submitted :
 ---------------
