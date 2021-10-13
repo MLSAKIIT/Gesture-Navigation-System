@@ -55,14 +55,30 @@ while True:
                         frame = cv2.putText(frame, "Dropped", (20, 80), cv2.FONT_HERSHEY_PLAIN, 1, 2)
                     Drag = False
 
-                #Copy contents to clipboard
+               #Copy contents to clipboard
 
-                CopyDist1 = math.sqrt(((hand.landmark[12].x - hand.landmark[16].x) * w) ** 2 + (
-                        (hand.landmark[12].y - hand.landmark[16].y) * h) ** 2)
-                CopyDist2 = math.sqrt(((hand.landmark[16].x - hand.landmark[20].x) * w) ** 2 + (
-                        (hand.landmark[16].y - hand.landmark[20].y) * h) ** 2)
+                CopyDist1 = math.sqrt(((hand.landmark[5].x - hand.landmark[7].x) * w) ** 2 + (
+                        (hand.landmark[5].y - hand.landmark[7].y) * h) ** 2)
+                CopyDist2 = math.sqrt(((hand.landmark[9].x - hand.landmark[11].x) * w) ** 2 + (
+                        (hand.landmark[9].y - hand.landmark[11].y) * h) ** 2)
+                CopyDist3 = math.sqrt(((hand.landmark[13].x - hand.landmark[15].x) * w) ** 2 + (
+                        (hand.landmark[13].y - hand.landmark[15].y) * h) ** 2)
+                CopyDist4 = math.sqrt(((hand.landmark[17].x - hand.landmark[19].x) * w) ** 2 + (
+                        (hand.landmark[17].y - hand.landmark[19].y) * h) ** 2)
+                CopyDist5 = math.sqrt(((hand.landmark[5].x - hand.landmark[6].x) * w) ** 2 + (
+                        (hand.landmark[5].y - hand.landmark[6].y) * h) ** 2)
+                CopyDist6 = math.sqrt(((hand.landmark[9].x - hand.landmark[10].x) * w) ** 2 + (
+                        (hand.landmark[9].y - hand.landmark[10].y) * h) ** 2)
+                CopyDist7 = math.sqrt(((hand.landmark[13].x - hand.landmark[14].x) * w) ** 2 + (
+                        (hand.landmark[13].y - hand.landmark[14].y) * h) ** 2)
+                CopyDist8 = math.sqrt(((hand.landmark[17].x - hand.landmark[18].x) * w) ** 2 + (
+                        (hand.landmark[17].y - hand.landmark[18].y) * h) ** 2)
 
-                if CopyDist1 < 25 and CopyDist2<25 and RightClickedDist < 25:
+
+
+
+                if (CopyDist1 < 25 and CopyDist2<25 and CopyDist3<25 and CopyDist4<25) or \
+                        (CopyDist5 < 25 and CopyDist6<25 and CopyDist7<25 and CopyDist8<25) :
                     frame = cv2.putText(frame, "Content copied to clipboard. " ,
                                         (20, 100), cv2.FONT_HERSHEY_PLAIN, 1, 2)
 
