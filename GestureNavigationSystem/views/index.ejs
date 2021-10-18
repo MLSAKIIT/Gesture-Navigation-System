@@ -1,11 +1,224 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+  <link rel="stylesheet" href="stylesheets/style.css" />
+</head>
+<body>
+  <!-- ----NAVBAR---- -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="main">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="/"><img src="IMAGES/logo.jpg" alt="logo" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="hamburger"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/ContactUs">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- ----SLIDESHOW---- -->
+  <section class="container-lg">
+    <div id="carouselExampleControls" class="carousel slide pointer-event" data-bs-ride="carousel">
+      <div class="carousel-inner" style="height: 50%; width: 100%">
+        <div class="carousel-item">
+          <img src="IMAGES/dummyPhoto.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text">Third dummy image</h5>
+            <p class="text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item active">
+          <img src="IMAGES/bgh.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text">First dummy image</h5>
+            <p class="text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="IMAGES/dummyPhoto.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text">Second dummy image</h5>
+            <p class="text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </section>
+  <!-- ----TEXT SECTION---- -->
+  <section class="about">
+    <div class="text1">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos rerum,
+        itaque dicta doloribus, vitae porro voluptatibus ipsam quia
+        consequuntur iusto dolores explicabo error sint sit culpa est laborum.
+        Earum natus provident inventore ipsam velit placeat iure voluptas
+        totam, quidem odit iusto unde incidunt nam cumque consequuntur impedit
+        veniam libero officiis voluptatem repellat laborum illum! Voluptatem
+        ratione accusamus eum voluptates voluptas, dolorem deleniti placeat!
+        Aliquam, ipsa rem! Similique, quod impedit repudiandae, blanditiis
+        cumque aliquid officia repellat itaque, quam laborum dicta vero
+        laudantium assumenda harum dolores non veritatis in nihil sunt
+        necessitatibus! Quos modi ad perferendis eos. Sit possimus, aliquid
+        reprehenderit, amet suscipit at commodi ex quisquam, adipisci
+        recusandae neque eaque. Commodi et cumque esse provident aliquam
+        repellat repellendus rem atque ad assumenda unde porro sit beatae
+        inventore hic delectus nobis culpa consectetur consequuntur quis eos,
+        doloribus facere illum totam? Et repudiandae debitis adipisci
+        laboriosam amet! Commodi vel eum sequi, quos illo, earum placeat
+        consectetur dolores alias totam veniam velit nesciunt cupiditate
+        ratione culpa dolor officia at doloremque dicta. Quisquam, modi
+        consequatur? Magnam explicabo ducimus ipsa saepe repudiandae aliquid
+        exercitationem amet iste quidem qui, excepturi veniam ab voluptatem
+        ratione. Cumque culpa exercitationem, quam illum provident aliquam
+        eaque facilis, veritatis inventore cum dignissimos?
+      </p>
+    </div>
+  </section>
+  <!-- ----TEXT + IMAGE -- SECTION---- -->
+  <section class="sec3">
+    <div class="a1">
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis dolorem
+        a nostrum velit praesentium neque quae, maiores labore doloremque.
+        Earum ipsa deleniti sint amet temporibus mollitia sapiente porro
+        aliquid molestias nulla cum id, adipisci, officia dolore maiores
+        deserunt quis inventore doloribus eaque voluptates, cumque ipsum alias
+        asperiores provident. Consequuntur deserunt quis nisi impedit id
+        dolores ipsam dicta accusamus est, aliquam molestiae non ipsum
+        accusantium quasi temporibus facilis magni tempore beatae minus? Ea
+        quisquam cum doloribus consequuntur aliquam, dolor, fugiat sequi,
+        harum ab in excepturi labore officiis omnis quasi facilis dolores.
+      </p>
+
+      <div>
+        <img src="IMAGES/dummyPhoto.jpg" alt="" />
+      </div>
+    </div>
+  </section>
+  <!-- ---- VIEW MORE BUTTON-1 ---- -->
+  <div class="container">
+    <a href="/viewMore1">
+      <button type="button" class="btn btn-primary">View more</button>
+    </a>
+  </div>
+  <!-- ----IMAGE + TEXT -- SECTION---- -->
+  <section class="sec3">
+    <div class="a2">
+      <div>
+        <img src="IMAGES/dummyPhoto.jpg" alt="" />
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis dolorem
+        a nostrum velit praesentium neque quae, maiores labore doloremque.
+        Earum ipsa deleniti sint amet temporibus mollitia sapiente porro
+        aliquid molestias nulla cum id, adipisci, officia dolore maiores
+        deserunt quis inventore doloribus eaque voluptates, cumque ipsum alias
+        asperiores provident. Consequuntur deserunt quis nisi impedit id
+        dolores ipsam dicta accusamus est, aliquam molestiae non ipsum
+        accusantium quasi temporibus facilis magni tempore beatae minus? Ea
+        quisquam cum doloribus consequuntur aliquam, dolor, fugiat sequi,
+        harum ab in excepturi labore officiis omnis quasi facilis dolores.
+      </p>
+    </div>
+  </section>
+   <!-- ---- VIEW MORE BUTTON-2 ---- -->
+  <div class="container">
+    <a href="/viewMore2">
+      <button type="button" class="btn btn-primary">View more</button>
+    </a>
+  </div>
+  <!-- TEXT SECTION -->
+  <section class="about">
+    <div class="text1">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos rerum,
+        itaque dicta doloribus, vitae porro voluptatibus ipsam quia
+        consequuntur iusto dolores explicabo error sint sit culpa est laborum.
+        Earum natus provident inventore ipsam velit placeat iure voluptas
+        totam, quidem odit iusto unde incidunt nam cumque consequuntur impedit
+        veniam libero officiis voluptatem repellat laborum illum! Voluptatem
+        ratione accusamus eum voluptates voluptas, dolorem deleniti placeat!
+        Aliquam, ipsa rem! Similique, quod impedit repudiandae, blanditiis
+        cumque aliquid officia repellat itaque, quam laborum dicta vero
+        laudantium assumenda harum dolores non veritatis in nihil sunt
+        necessitatibus! Quos modi ad perferendis eos. Sit possimus, aliquid
+        reprehenderit, amet suscipit at commodi ex quisquam, adipisci
+        recusandae neque eaque. Commodi et cumque esse provident aliquam
+        repellat repellendus rem atque ad assumenda unde porro sit beatae
+        inventore hic delectus nobis culpa consectetur consequuntur quis eos,
+        doloribus facere illum totam? Et repudiandae debitis adipisci
+        laboriosam amet! Commodi vel eum sequi, quos illo, earum placeat
+        consectetur dolores alias totam veniam velit nesciunt cupiditate
+        ratione culpa dolor officia at doloremque dicta. Quisquam, modi
+        consequatur? Magnam explicabo ducimus ipsa saepe repudiandae aliquid
+        exercitationem amet iste quidem qui, excepturi veniam ab voluptatem
+        ratione. Cumque culpa exercitationem, quam illum provident aliquam
+        eaque facilis, veritatis inventore cum dignissimos?
+      </p>
+    </div>
+  </section>  
+  <!-- ---- ^^^^^^^^ BUTTON ---- -->
+  <div class="container up">
+    <a href="/">
+      <button type="button" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+      </svg></button>
+    </a>
+  </div>
+  <!-- FOOTER -->
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+      <ul>
+        <li class="text-muted">© 2021 Company, Inc.</li>
+        <li class="text-muted">lorem</li>
+        <li class="text-muted">lorem</li>
+      </ul>
+    </div>
+  </footer>
+<!-- ----------------------------------------- -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+    integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+    crossorigin="anonymous"></script>
+</body>
 </html>
