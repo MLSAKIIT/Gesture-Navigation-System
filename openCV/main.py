@@ -127,7 +127,29 @@ while True:
 
                 if CutDist <25:
                     frame = cv2.putText(frame, "Cut",
-                                        (20, 60), cv2.FONT_HERSHEY_PLAIN, 1, 2)                          
+                                        (20, 60), cv2.FONT_HERSHEY_PLAIN, 1, 2) 
+
+                # Alternative Gesture 1
+
+                G1Dist1 = math.sqrt(((hand.landmark[4].x - hand.landmark[1].x) * w) ** 2 + (
+                        (hand.landmark[4].y - hand.landmark[1].y) * h) ** 2)
+                G1Dist2 = math.sqrt(((hand.landmark[17].x - hand.landmark[20].x) * w) ** 2 + (
+                        (hand.landmark[17].y - hand.landmark[20].y) * h) ** 2)
+
+                if CopyDist5<25 and CopyDist6<25 and CopyDist7<25 and G1Dist1>70 and G1Dist2>55:
+                    frame = cv2.putText(frame, "Alternative Gesture 1",
+                                        (20, 120), cv2.FONT_HERSHEY_PLAIN, 1, 2)
+
+
+                # Alternative Gesture 2
+
+                G2Dist1 = math.sqrt(((hand.landmark[5].x - hand.landmark[8].x) * w) ** 2 + (
+                        (hand.landmark[5].y - hand.landmark[8].y) * h) ** 2)
+
+                if CopyDist6 < 25 and CopyDist7 < 25 and G1Dist1 > 80 and G1Dist2 > 55 and G2Dist1 > 60 and (hand.landmark[8].y)*h<(hand.landmark[5].y)*h:
+                    frame = cv2.putText(frame, "Alternative Gesture 2",
+                                        (20, 120), cv2.FONT_HERSHEY_PLAIN, 1, 2)
+
                     
         cv2.imshow("Mediapipe", frame)
 cv2.destroyAllWindows()

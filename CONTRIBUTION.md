@@ -19,7 +19,7 @@
 
 ##### NAME : Sneha Daripa
 ---------------
-##### Number of commit's Submitted : 2
+##### Number of commit's Submitted : 3
 ---------------
 
 ##### NAME : Ayush Sinha
