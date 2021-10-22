@@ -100,10 +100,10 @@ while True:
                                         (20, 60), cv2.FONT_HERSHEY_PLAIN, 1, 2)    
                     
                 # Checking scroll down
-                ScrollDistDown = math.sqrt(((hand.landmark[12].x - hand.landmark[11].x) * w) ** 2 + (
+                ScrollDownDist = math.sqrt(((hand.landmark[12].x - hand.landmark[11].x) * w) ** 2 + (
                         (hand.landmark[12].y - hand.landmark[11].y) * h) ** 2)
 
-                if ScrollDistDown <5:
+                if ScrollDownDist <5:
                     frame = cv2.putText(frame, "Scrolling down",
                                         (20, 60), cv2.FONT_HERSHEY_PLAIN, 1, 2) 
                 # Checking zoom in
