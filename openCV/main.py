@@ -100,10 +100,10 @@ while True:
                                         (20, 60), cv2.FONT_HERSHEY_PLAIN, 1, 2)    
                     
                 # Checking scroll down
-                ScrollDistUp = math.sqrt(((hand.landmark[12].x - hand.landmark[11].x) * w) ** 2 + (
+                ScrollDownDist = math.sqrt(((hand.landmark[12].x - hand.landmark[11].x) * w) ** 2 + (
                         (hand.landmark[12].y - hand.landmark[11].y) * h) ** 2)
 
-                if ScrollDistUp <5:
+                if ScrollDownDist <5:
                     frame = cv2.putText(frame, "Scrolling down",
                                         (20, 60), cv2.FONT_HERSHEY_PLAIN, 1, 2) 
                 # Checking zoom in
@@ -116,9 +116,9 @@ while True:
            
                 # Checking zoom out
                 ZoomOutDist = math.sqrt(((hand.landmark[4].x - hand.landmark[17].x) * w) ** 2 + (
-                        (hand.landmark[12].y - hand.landmark[11].y) * h) ** 2)
+                        (hand.landmark[4].y - hand.landmark[17].y) * h) ** 2)
 
-                if ZoomOutDist <30:
+                if ZoomOutDist <35:
                     frame = cv2.putText(frame, "Zooming out",
                                         (20, 60), cv2.FONT_HERSHEY_PLAIN, 1, 2)   
                 # Checking cut
