@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
-
+const path = require("path");
+const {Router} = require("express");
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index');
@@ -21,9 +22,10 @@ router.get('/viewMore2', function(req, res, next) {
   res.render('viewMore2');
 });
 
-/* GET contact page. */
-router.get('/ContactUs', function(req, res, next) {
-  res.render('contact');
+/* GET WhiteBoard page. */
+router.get('/WhiteBoard', function(req, res, next) {
+  router.use(express.static(path.join(__dirname, '../build')));
+  res.sendFile(path.join(__dirname,'../build','index.html'));
 });
 
 module.exports = router;
