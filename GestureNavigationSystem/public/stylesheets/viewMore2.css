@@ -23,7 +23,13 @@ body {
     margin-right: 3.5rem;
     margin-bottom: 3rem;
     border-radius: 1rem;
-    
+}
+
+.picSize{
+    overflow: hidden;
+    object-fit: fill;
+    /*width: 20rem;*/
+    height: 16.5rem ;
 }
 .row{
     padding: 1rem;
