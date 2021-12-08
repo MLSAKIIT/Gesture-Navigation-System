@@ -22,6 +22,11 @@ router.get('/viewMore2', function(req, res, next) {
   res.render('viewMore2');
 });
 
+/* GET viewMore3 page. */
+router.get('/viewMore3', function(req, res, next) {
+  res.render('viewMore3');
+});
+
 /* GET WhiteBoard page. */
 router.get('/WhiteBoard', function(req, res, next) {
   router.use(express.static(path.join(__dirname, '../build')));
