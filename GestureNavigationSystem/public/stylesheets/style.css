@@ -100,6 +100,7 @@ body {
 }
 .a1 img {
   width: 42vw;
+  height: 22vw;
   border: 2px solid black;
   border-radius: 1rem;
 }
@@ -163,6 +164,7 @@ body {
     width: 70vw;
   }
 }
+
 /* FOOTER */
 .text-muted{  
   display: flex;
